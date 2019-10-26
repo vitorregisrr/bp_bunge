@@ -5,12 +5,11 @@ $("#contact-form").validate({
             minLength: 5
         },
 
-        email: {
-            required: true,
-            email: true
+        telefone: {
+            required: true
         },
 
-        mensagem: {
+        descricao: {
             required: true,
             minlength: 10
         }
@@ -22,14 +21,13 @@ $("#contact-form").validate({
             minLength: "Seu nome parece estar incompleto"
         },
 
-        email: {
-            required: 'Precisamos saber seu email.',
-            email: 'Email inválido.'
+        telefone: {
+            required: 'Precisamos saber seu telefone.'
         },
 
-        mensagem: {
-            required: "Por favor, escreva uma mensagem!",
-            minlength: "Sua mensagem deve ter no mínimo 10 caracteres."
+        descricao: {
+            required: "Por favor, escreva uma descrição",
+            minlength: "Sua descrição deve ter no mínimo 10 caracteres."
         }
     }
 });

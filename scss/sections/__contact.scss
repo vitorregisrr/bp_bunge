@@ -1,0 +1,119 @@
+.contact{
+    position: relative;
+    background-color: $color-navy;
+
+    @media screen and (max-width: $bp-MD){
+        padding: 0 20px;
+    }
+
+    &-nav-toggler {
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+        display: none;
+
+        @media screen and (max-width: $bp-MD){
+            display: block;
+        }
+
+        @media screen and (max-width: 330px) {
+            width: 40px;
+        }
+
+        span {
+            display: block;
+            height: 4px;
+            border-radius: 2px;
+            width: 100%;
+            background-color: #fff;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__header{
+        position: relative;
+        width: 100%;
+        height: 60px;
+        border: 1px solid #fff;
+        border-top: none;
+
+        @media screen and (max-width: $bp-MD){
+            display: none;
+        }
+        
+        .main-nav{
+            top: unset;
+            bottom: 4px;
+        }
+    }
+
+    &__caption{
+        padding-top: 60px;
+
+        @media screen and (max-width: $bp-MD){
+            padding-top: 40px;
+        }
+
+        &-title{
+            font-size: 37px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 8px;
+            font-weight: lighter;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        &-subtitle{
+            font-size: 28px;
+            color: $color-green-light;
+            font-weight: bold;
+            margin-bottom: 30px;
+
+            span{
+                display: block;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 22px;
+            }
+        }
+
+        &-desc{
+            font-weight: 400;
+            font-size: 19px;
+            color: #fff;
+            max-width: 65%;
+            line-height: 1.7;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: $bp-LG){
+                max-width: 80%;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 16px;
+                max-width: 97%;
+            }
+        }
+    }
+    &__form{
+        background-color: #E5EBEB;
+        padding: 60px 50px 40px 50px;
+
+        @media screen and (max-width: $bp-MD){
+            padding: 0;
+            background-color: transparent;
+            padding-bottom: 60px;
+        }
+    }
+}

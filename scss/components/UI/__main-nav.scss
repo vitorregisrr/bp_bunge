@@ -45,14 +45,36 @@
                 border: 1px solid $color-navy;
                 @include transition();
             }
+        }
 
-            &.active {
-                font-weight: bold;
+        &.active {
+            font-weight: bold;
 
+            a{
                 &:after {
                     background-color: $color-green-light;
                 }
+            }
 
+        }
+    }
+
+    &.links-bottom {
+        .main-nav-item {
+            a {
+                top: 35px;
+
+                &:after{
+                    top: -33px;
+                }
+
+                &:hover {
+                    top: 40px;
+
+                    &:after {
+                        top: -38px;
+                    }
+                }
             }
         }
     }
