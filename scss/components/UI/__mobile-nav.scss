@@ -1,0 +1,57 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #3D5975;
+    z-index: 11;
+    @include transition();
+    
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    @media screen and (min-width: $bp-LG){
+        display: none;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__item{
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        margin-bottom: 20px;
+        text-align: center;
+        
+        a{
+            color: #fff;
+            opacity: .6;
+        }
+    }
+
+    &__close{
+        background: none;
+        border: none;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/ico/close.png);
+        background-size: contain;
+        background-repeat: no-repeat;background-position: center center;
+        margin-bottom: 30px;
+    }
+    
+     .container{
+         height: 100%;
+     }
+}

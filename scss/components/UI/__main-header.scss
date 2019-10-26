@@ -1,3 +1,86 @@
 .main-header {
+    padding: 29px 0 85px 0;
 
+    @media screen and (max-width: $bp-MD){
+        padding: 25px 20px 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .container{
+        padding: 0;
+    }
+    
+    &__content{
+        display: flex;
+
+        @media screen and (max-width: $bp-LG){
+            justify-content: flex-end;
+        }
+    }
+
+    &__toggler{
+        display: none;
+
+        @media screen and (max-width: $bp-LG) {
+            display: block;
+        }
+    }
+
+    &__langs{
+        display: flex;
+        margin-right: 10px;
+    }
+
+    &__lang{
+        font-size: 12px;
+        padding: 3px 6px;
+        color: $color-navy;
+        @include transition();
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 330px) {
+            font-size: 12px;
+        }
+
+        &:hover{
+            color: $color-secondary;
+        }
+
+        &.active{
+            font-weight: bold;
+        }
+
+        &:not(:last-child){
+            border-right: 1px solid $color-navy;
+        }
+
+        &:first-child{
+            padding-left: 0;
+        }
+    }
+
+    &__toggler{
+        width: 50px;
+        background-color: transparent;
+        border: none;
+        
+        @media screen and (max-width: 330px) {
+            width: 40px;
+        }
+
+        span{
+            display: block;
+            height: 4px;
+            border-radius: 2px;
+            width: 100%;
+            background-color: $color-navy;
+
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+    }
 }

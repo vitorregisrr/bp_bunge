@@ -1,3 +1,59 @@
 .main-nav {
-   
+    position: absolute;
+    right: 70px;
+    top: -11px;
+    display: flex;
+
+
+    &-item {
+        position: relative;
+
+        &:not(:first-child) {
+            margin-left: 160px;
+        }
+
+        a {
+            position: absolute;
+            font-size: 16px;
+            top: -45px;
+            text-align: center;
+            white-space: nowrap;
+            color: $color-light;
+            transform: translateX(-41%);
+            @include transition();
+
+            &:hover {
+                color: $color-green-light;
+                top: -50px;
+
+                &:after {
+                    bottom: -45px;
+                    background-color: $color-green-light;
+                }
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: -40px;
+                transform: translateX(-50%);
+                width: 19px;
+                height: 19px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid $color-navy;
+                @include transition();
+            }
+
+            &.active {
+                font-weight: bold;
+
+                &:after {
+                    background-color: $color-green-light;
+                }
+
+            }
+        }
+    }
 }

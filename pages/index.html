@@ -4,7 +4,7 @@
 <head>
   <!-- partial:../partials/__head.html -->
 
-  <meta charset="UTF-8">
+            <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BP Bunge Bioenergia</title>
@@ -62,24 +62,61 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-  <!-- partial -->
+          <!-- partial -->
 </head>
 
 <body class=" wow fadeIn">
   <!-- partial:../partials/__navbar.html -->
+  <nav class="main-header">
+    <div class="container">
+        <div class="main-header__content">
+            <div class="main-header__langs wow fadeInLeft">
+                <a href="/en" class="main-header__lang">EN</a>
+                <a href="/pt" class="main-header__lang active">PT</a>
+            </div>
+            <button class="main-header__toggler wow fadeInRight" data-toggle="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<nav id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <div class="container">
+        <div class="mobile-nav__content">
+            <button class="mobile-nav__close fadeInUp animate" data-toggle="mobile-nav"></button>
+
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item fadeInUp animate">
+                    <a href="#home">Quem somos</a>
+                </li>
+
+                <li class="mobile-nav__item fadeInUp animate">
+                    <a href="#contact">Trabalhe Conosco</a>
+                </li>
+
+                <li class="mobile-nav__item fadeInUp animate">
+                    <a href="#imprensa">Imprensa</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
   <!-- partial -->
 
   <main>
 
-    <section id="home" class="home">
-      <div class="container home__border">
+    <section id="home" class="home wow fadeIn">
+      <div class="container home__border position-relative">
         <header class="home__header">
-          <div class="home__brand">
-            <img src="../images/brands/bunge-white.png" alt="Logo Bunge Bioenergia Colorido">
+          <div class="home__brand wow zoomIn">
+            <img src="../images/brands/bunge.png" alt="Logo Bunge Bioenergia Colorido">
           </div>
 
           <div class="home__nav">
-            <ul class="main-nav">
+            <ul class="main-nav wow fadeInUp">
               <li class="main-nav-item active">
                 <a href="#home">Quem Somos</a>
               </li>
@@ -96,21 +133,21 @@
         </header>
 
         <div class="home__content">
-          <p class="home__content-who">Quem somos</p>
-          <h1 class="home__content-title">
+          <p class="home__content-who wow fadeInUp">Quem somos</p>
+          <h1 class="home__content-title wow fadeInUp">
             Por um futuro
             <span>com mais energia</span>
           </h1>
-          <h2 class="home__content-subtitle">
+          <h2 class="home__content-subtitle wow fadeInUp">
             A BP Bunge Bioenergia é uma das empresas líderes no mercado de etanol, bioeletricidade e açúcar, no Brasil.
           </h2>
-          <p class="home__content-caption">
+          <p class="home__content-caption wow fadeInUp">
             Comprometida com segurança e sustentabilidade, a companhia tem mais de dez mil pessoas empenhadas em fazer
             da BP Bunge Bioenergia uma referência no mercado, apta a atender à crescente demanda por biocombustíveis e
             bioeletricidade.
           </p>
 
-          <a href="#achievements" class="home__content-scrolldown"></a>
+          <a href="#achievements" class="home__content-scrolldown bounce"></a>
         </div>
       </div>
     </section>
@@ -219,7 +256,7 @@
     <section id="contact" class="contact">
       <div class="container">
         <header class="contact__header">
-          <ul class="main-nav">
+          <ul class="main-nav wow fadeInUp">
             <li class="main-nav-item">
               <a href="#home">Quem Somos</a>
             </li>
@@ -288,11 +325,11 @@
       </div>
     </section>
 
-    <section class="imprensa">
+    <section id="imprensa" class="imprensa">
 
       <nav class="imprensa__navbar">
         <div class="container position-relative">
-          <ul class="main-nav">
+          <ul class="main-nav wow fadeInUp">
             <li class="main-nav-item">
               <a href="#home">Quem Somos</a>
             </li>
@@ -332,10 +369,6 @@
     </section>
 
   </main>
-
-  <!-- partial:../partials/__footer.html -->
-
-  <!-- partial -->
 
 </body>
 
