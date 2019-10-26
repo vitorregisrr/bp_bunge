@@ -1085,6 +1085,45 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   }
 }
 
+.quem-somos {
+  padding: 0 15px;
+}
+
+.quem-somos__border {
+  border: 1px solid #3D5975;
+  border-top: none;
+  border-bottom: none;
+  padding: 70px 0 120px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .quem-somos__border {
+    padding-bottom: 30px;
+  }
+}
+
+.quem-somos__caption {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .quem-somos__caption {
+    max-width: 500px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quem-somos__caption {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+}
+
 .contact {
   position: relative;
   background-color: #3D5975;

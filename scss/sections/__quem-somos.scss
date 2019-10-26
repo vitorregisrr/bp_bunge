@@ -1,0 +1,34 @@
+.quem-somos{
+    padding: 0 15px;
+
+    &__border{
+        border: 1px solid $color-navy;
+        border-top: none;
+        border-bottom: none;
+        padding: 70px 0 120px 0;
+
+        @media screen and (max-width: $bp-MD){
+            padding-bottom: 30px;
+        }
+    }
+
+
+    &__caption{
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        max-width: 740px;
+        margin: 0 auto;
+
+        @media screen and (max-width: $bp-LG){
+            max-width: 500px;
+            font-size: 17px;
+        }
+        
+        @media screen and (max-width: $bp-MD){
+            padding: 0 20px;
+            font-size: 16px;
+        }
+    }
+
+}
