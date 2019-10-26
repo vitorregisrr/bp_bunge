@@ -118,6 +118,10 @@
 
         img{
             width: 300px;
+
+            @media screen and (max-width: 400px){
+                width: 250px;
+            }
         }
 
 
