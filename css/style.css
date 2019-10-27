@@ -1175,6 +1175,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   background-color: transparent;
   border: none;
   display: none;
+  z-index: 5;
 }
 
 @media screen and (max-width: 768px) {
