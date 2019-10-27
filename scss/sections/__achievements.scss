@@ -1,8 +1,17 @@
 .achievements{
+
+    @media screen and (max-width: $bp-MD){
+        padding: 0 15px;
+    }
+
     &__content{
         background-image: url(../images/backgrounds/shapes-bg-left.png);
         background-size: 100%;
         background-repeat: no-repeat;
+
+        @media screen and (max-width: $bp-LG){
+            background: none;
+        }
     }
 
     &__border{
@@ -12,13 +21,22 @@
         padding-top: 200px;
         padding-bottom: 100px;
         height: 700px;
+
+        @media screen and (max-width: $bp-LG){
+            height: auto;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            padding: 30px 0;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
 
     &__item{
-
-        @media screen and (max-width: $bp-MD){
-            position: relative;
-        }
 
         &-caption{
             display: flex;
@@ -35,6 +53,10 @@
             color: #00498B;
             line-height: 1;
 
+            @media screen and (max-width: $bp-MD){
+                font-size: 15px;
+            }
+
             &.lg{
                 width: 270px;
                 height: 270px;
@@ -43,6 +65,11 @@
             &.sm{
                 width: 210px;
                 height: 210px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                height: 220px !important;
+                width: 220px !important;
             }
 
             span{
@@ -217,6 +244,95 @@
                 img{
                     width: 800px;
                 }
+            }
+        }
+
+        @media screen and (max-width: $bp-LG){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative !important;
+            
+            &-icon, &-caption{
+                position: relative !important;
+                left: unset !important;
+                right: unset !important;
+                top: unset !important;
+            }
+
+            &-caption{
+                margin-bottom: 10px;
+
+                &.icon-top{
+                    margin-top: 120px;
+                }
+            }
+
+            &-icon{
+                &.on-top{
+                    position: absolute !important;
+                    top: 40px !important;
+                }
+            }
+
+            &:nth-child(1){
+                .achievements__item-icon{
+
+                    top: -18px !important;
+                    img{
+                        width: 300px;
+    
+                    }
+                }
+            }
+
+            &:nth-child(2){
+                .achievements__item-caption{
+                    margin-bottom: 40px;
+                }
+
+                .achievements__item-icon{
+
+                    top: -12px !important;
+                    img{
+                        width: 200px;
+    
+                    }
+                }
+            }
+
+            &:nth-child(5){
+
+                .icon-top{
+                    margin-top: 80px;
+                }
+
+                .achievements__item-icon{
+                    top: 25px !important;
+
+                    img{
+                        width: 240px;
+                    }
+                }
+            }
+            
+            &.has-bg{
+               &:after{
+                   content: '';
+                   position: absolute;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   top: -40px;
+                   width: 120vw;
+                   height: 100%;
+                   background-image: url(../images/backgrounds/shapes-bg-left.png);
+                   background-size: 100% 100%;
+                   background-repeat: no-repeat;
+                   z-index: -1;
+                   max-height: 250px;
+
+               }
             }
         }
         

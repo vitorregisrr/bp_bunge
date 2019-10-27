@@ -1,13 +1,21 @@
 .home {
     
     @media screen and (max-width: $bp-MD) {
-        margin: 0 25px;
+        margin: 0 15px;
     }
     
     &__border {
         border: 0px solid $color-navy;
         border-width: 1.1px 1.1px 0px 1.1px;
         padding-bottom: 270px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-bottom: 40px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            padding-bottom: 0;
+        }
     }
     
     &__brand {
