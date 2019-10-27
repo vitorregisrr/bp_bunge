@@ -1649,6 +1649,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   left: -760px;
   top: 50px;
   font-size: 18px;
+  font-weight: 400;
   z-index: 3;
   display: flex;
   align-items: center;
@@ -1843,6 +1844,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 .imprensa__contact-desc {
   font-size: 17px;
   margin-top: 18px;
+  font-weight: 400;
 }
 
 .imprensa__contact-desc span {
