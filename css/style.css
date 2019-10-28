@@ -110,6 +110,10 @@
   object-fit: contain;
 }
 
+.imprensa__brand-scrolltop.eng, .contact__scrolltop.eng {
+  background-image: url("../images/ico/scrolltop-eng.png") !important;
+}
+
 .bounce {
   -moz-animation: bounce 1.5s infinite;
   -webkit-animation: bounce 1.5s infinite;
